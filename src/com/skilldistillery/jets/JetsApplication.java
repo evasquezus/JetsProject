@@ -20,6 +20,29 @@ public class JetsApplication {
 		System.out.println("7>> List all jets in fleet");
 		System.out.println("8>> Quit");
 		int userChoice = kb.nextInt();
-	}
 
+		switch (userChoice) {
+		case 1:
+			newAirField.fly();
+		case 2:
+			newAirField.viewFastestJet();
+		case 3:
+			newAirField.viewLongestRange();
+		case 4:
+			newAirField.loadAllCargoJets();
+		case 5:
+			newAirField.dogFight();
+		case 6:
+			newAirField.addJet();
+		case 7:
+			newAirField.listFleet();
+		case 8:
+			System.out.println("You had decided to quit..existing");
+			return;
+		default:
+			System.out.println("Please try to pick one of the options listed");
+
+		}
+
+	}
 }
