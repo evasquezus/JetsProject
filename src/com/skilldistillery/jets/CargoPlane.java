@@ -6,4 +6,10 @@ public class CargoPlane extends Jets implements CargoCarrier{
 		super(model, speed, range, price, speedInMatch);
 	}
 
+	@Override
+	public void loadCargo() {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

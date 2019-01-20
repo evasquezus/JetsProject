@@ -2,6 +2,7 @@ package com.skilldistillery.jets;
 
 public abstract class Jets {
 
+
 	private String model;
 	private double speed;
 	private double speedInMatch;
@@ -16,7 +17,6 @@ public abstract class Jets {
 		this.price = price;
 		this.speedInMatch = speedInMatch;
 	}
-
 	public String getModel() {
 		return model;
 	}
@@ -31,6 +31,14 @@ public abstract class Jets {
 
 	public void setSpeed(double speed) {
 		this.speed = speed;
+	}
+
+	public double getSpeedInMatch() {
+		return speedInMatch;
+	}
+
+	public void setSpeedInMatch(double speedInMatch) {
+		this.speedInMatch = speedInMatch;
 	}
 
 	public int getRange() {
@@ -48,5 +56,6 @@ public abstract class Jets {
 	public void setPrice(long price) {
 		this.price = price;
 	}
+	
 
 }

@@ -7,5 +7,11 @@ public class FighterJet extends Jets implements CombatReady{
 	
 	}
 
+	@Override
+	public void doBattle() {
+		// TODO Auto-generated method stub
+		
+	}
+
 	
 }
