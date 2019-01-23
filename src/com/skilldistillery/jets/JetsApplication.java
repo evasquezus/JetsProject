@@ -10,14 +10,12 @@ public class JetsApplication {
 		Scanner kb = new Scanner(System.in);
 		// Initial menu popup
 		IntroMenu menu = new IntroMenu();
-		menu.displayMenu();
-		int userChoice;
-		userChoice = kb.nextInt();
+		boolean istrue = true;
 		
-		while(userChoice != 8) {
+		while(istrue ) {
 			menu.displayMenu();
+			int userChoice;
 			userChoice = kb.nextInt();
-
 			switch (userChoice) {
 			case 1:
 				newAirField.listFleet();
