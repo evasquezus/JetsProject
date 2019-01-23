@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class AirField {
 	Jet[] jets = new Jet[10];
 	Scanner kb = new Scanner(System.in);
-
 	// Array of jet objects
 	public AirField() {
 		jets[0] = new FighterJet(" F-16", 900.00, 2000.00, 1_000_000);
@@ -16,7 +15,8 @@ public class AirField {
 		jets[5] = new CargoPlane(" 747", 900.00, 3000.00, 1_000_000);
 
 	}
-	//fly methods for all jets
+
+	// fly methods for all jets
 	public void fly() {
 		System.out.println(" We are about to make all jets fly");
 		for (int i = 0; i < jets.length; i++) {
@@ -29,7 +29,7 @@ public class AirField {
 		}
 	}
 
-		//view fastest jet from the fleet
+	// view fastest jet from the fleet
 	public void viewFastestJet() {
 		double topSpeed = 0.0;
 		Jet fastestJet = null;
@@ -42,12 +42,11 @@ public class AirField {
 				fastestJet = jets[i];
 			}
 
-			System.out.println(" The fastest is " + fastestJet.getModel() + "The speed is " + topSpeed);
 		}
+		System.out.println(" The fastest is " + fastestJet.getModel() + "The speed is " + topSpeed);
 	}
 
-	
-	//list all jets from the fleet
+	// list all jets from the fleet
 	public void listFleet() {
 		System.out.println(" Here is a list of the fleet ");
 		for (int i = 0; i < jets.length; i++) {
@@ -60,7 +59,7 @@ public class AirField {
 
 	}
 
-	//view jet with the longest range
+	// view jet with the longest range
 	public void viewLongestRange() {
 		double range = 0.0;
 		Jet longestRange = null;
@@ -72,12 +71,11 @@ public class AirField {
 				range = jets[i].getRange();
 				longestRange = jets[i];
 			}
-			System.out.println(" The jet with the longest range is "+longestRange.getModel()+" The range is "+range);
 		}
+		System.out.println(" The jet with the longest range is " + longestRange.getModel() + " The range is " + range);
 	}
 
-
-	//load all cargo jets in the fleet
+	// load all cargo jets in the fleet
 	public void loadAllCargoJets() {
 		for (int i = 0; i < jets.length; i++) {
 			if (jets[i] != null && jets[i] instanceof CargoPlane) {
@@ -89,7 +87,7 @@ public class AirField {
 		}
 	}
 
-	//all jets will start fighting 
+	// all jets will start fighting
 	public void dogFight() {
 		for (int i = 0; i < jets.length; i++) {
 			if (jets[i] != null && jets[i] instanceof FighterJet) {
@@ -102,9 +100,9 @@ public class AirField {
 		System.out.println(" All Jets are doing battle ");
 	}
 
-	//method to add a jet to the fleet
+	// method to add a jet to the fleet
 	public void addJet() {
-		//fields
+		// fields
 		String model;
 		double speed;
 		double range;
@@ -121,7 +119,8 @@ public class AirField {
 		price = kb.nextDouble();
 
 		Jet newJet1 = new JetImpl(model, speed, range, price);
-		//if statement checks if the jets at index [i](starts at 0) is empty add a jet to the current index
+		// if statement checks if the jets at index [i](starts at 0) is empty add a jet
+		// to the current index
 		for (int i = 0; i < jets.length - 1; i++) {
 			if (jets[i] == null) {
 				jets[i] = newJet1;
