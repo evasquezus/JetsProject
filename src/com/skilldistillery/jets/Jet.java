@@ -1,36 +1,35 @@
 package com.skilldistillery.jets;
 
-public abstract class Jets {
+public abstract class Jet {
 
+	// Fields
 	private String model;
 	private double speed;
-	private double speedInMatch;
-	private int range;
+	private double range;
 	private double price;
 
-	public Jets(String model, double speed, int range, long price) {
+	// Constructor
+
+	public Jet(String model, double speed, double range, double price) {
 		super();
 		this.model = model;
 		this.speed = speed;
 		this.range = range;
 		this.price = price;
-		
+
 	}
-	
-	public Jets(String model2, double speed2, double range2, double price2) {
-		// TODO Auto-generated constructor stub
-	}
+
 
 	public void fly() {
 		System.out.println("is currently flying");
 	}
-	
+
 	public double speedInMatch() {
-		double speed = 500;
+		double speed = 0;
 		return speed;
-		
+
 	}
-	
+
 	public String outPut() {
 		String output = "Model: " + model + ", Speed: " + speed + ", Range: " + range + ", Price: " + price;
 		return output;
@@ -52,15 +51,18 @@ public abstract class Jets {
 		this.speed = speed;
 	}
 
-	public double getSpeedInMatch() {
-		return speedInMatch;
+	public void getSpeedInMatch() {
+		double mach = this.getSpeed() / 760.56;
+		if(this.getSpeed() < 760.56) {
+			System.out.println((int)mach);
+		}
 	}
 
 	public void setSpeedInMatch(double speedInMatch) {
-		this.speedInMatch = speedInMatch;
+		
 	}
 
-	public int getRange() {
+	public double getRange() {
 		return range;
 	}
 
@@ -73,7 +75,7 @@ public abstract class Jets {
 	}
 
 	public void setPrice(double price) {
-		this.price = price;
+		this.price = (long) price;
 	}
 
 }
