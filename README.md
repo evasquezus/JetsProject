@@ -1,5 +1,5 @@
 ## Jets Application
-
+![](images/jets.png)
 ### Description
 
 This app will be ran from the console, it focuses on a menu which includes the following 
