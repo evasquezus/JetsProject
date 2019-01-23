@@ -2,7 +2,7 @@
 ![](images/jets.png)
 ### Description
 
-This app will be ran from the console, it focuses on a menu which includes the following 
+This app will be ran from the console. Based on the users choice we will be able to call upon different methods to display or even create based on the options listed below.
 
          [1]: List Fleet                       
          [2]: View fastest jet                 
@@ -11,8 +11,11 @@ This app will be ran from the console, it focuses on a menu which includes the f
          [5]: Dogfight!                        
          [6]: Add a jet to Fleet               
          [7]: Fly All Jets                     
-         [8]:  Quit                            
+         [8]:  Quit 
+         
+         
 ### Technologies / Topics
+This is Week 3 [Skill Distillery](http://skilldistillery.com) weekend homework.
 * Java
 * Object-oriented design
   * Polymorphism
@@ -23,4 +26,3 @@ This app will be ran from the console, it focuses on a menu which includes the f
 
 
 
-Image, maybe the UML I downloaded from Skill Distillery's GitHub page.
