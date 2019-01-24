@@ -11,7 +11,7 @@ public class IntroMenu {
 		System.out.println("         [5]: Dogfight!                        ");
 		System.out.println("         [6]: Add a jet to Fleet               ");
 		System.out.println("         [7]: Fly All Jets                     ");
-		System.out.println("         [8]:  Quit                            ");
+		System.out.println("         [8]: Quit                             ");
 		System.out.println("***********************************************");
 	}
 
