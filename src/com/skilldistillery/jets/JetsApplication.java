@@ -40,7 +40,7 @@ public class JetsApplication {
 				break;
 			case 8:
 				System.out.println("You have decided to quit..existing");
-				break;
+				System.exit(0);
 			default:
 				System.out.println("Please try to pick one of the options listed");
 				break;
