@@ -15,7 +15,7 @@ This app will be ran from the console. Based on the users choice we will be able
          
          
 ### Technologies / Topics
-This is Week 3 [Skill Distillery](http://skilldistillery.com) weekend homework.
+This is Week 2 [Skill Distillery](http://skilldistillery.com) weekend homework.
 * Java
 * Object-oriented design
   * Polymorphism
