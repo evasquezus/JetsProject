@@ -11,7 +11,7 @@ This app will be ran from the console. Based on the users choice we will be able
          [5]: Dogfight!                        
          [6]: Add a jet to Fleet               
          [7]: Fly All Jets                     
-         [8]:  Quit 
+         [8]: Quit 
          
          
 ### Technologies / Topics
