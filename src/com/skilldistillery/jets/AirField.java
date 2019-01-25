@@ -51,7 +51,7 @@ public class AirField {
 		System.out.println(" Here is a list of the fleet ");
 		for (int i = 0; i < jets.length; i++) {
 			if (jets[i] != null) {
-				System.out.println(jets[i].getModel());
+				System.out.println("Model: " + jets[i].getModel() + " " + "Speed: " + jets[i].getSpeed() +  " " + " Range: " + jets[i].getRange() + " " + " Price : " + jets[i].getPrice());
 			} else if (jets[i] == null) {
 				break;
 			}
